@@ -1,0 +1,172 @@
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .header-title {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .logout-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #c00;
+    }
+  }
+  
+  .user-table-container {
+    margin-top: 2rem;
+    overflow-x: auto; /* Para que la tabla sea scrollable en pantallas pequeñas */
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  
+    th, td {
+      border: 1px solid #fff;
+      padding: 0.5rem;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #333;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #222;
+    }
+  
+    /* Resaltar las líneas de la tabla */
+    th, td {
+      border: 1px solid #fff;
+    }
+  }
+  
+
+.buttons-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.button-edit{
+  border: none;
+  color: #ea580c;
+  font-size: 20px;
+  cursor : pointer;
+}
+
+
+.button-save{
+  border: none;
+  color: #22c55e;
+  font-size: 20px;
+  cursor : pointer;
+}
+
+
+.button-delete{
+  border: none;
+  color: #b91c1c;
+  font-size: 20px;
+  cursor : pointer;
+}
+
+th{
+  color: white;
+}
+
+.field-input-active{
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.field-input-deactive{
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.c-plus{
+  display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.b-plus{
+  border: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #183153;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.i-plus{
+  background: #183153;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+}
+
+.hiden-select {
+  display: none;
+}
+
+.show-select {
+  display: block;
+}
+
+.field-input-active{
+  border: none;
+  color: black;
+  padding: 5px;
+  border: none;
+  width: 100%;
+  
+}
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .logout-button {
+      font-size: 0.875rem;
+      padding: 0.5rem;
+    }
+  
+    .user-table {
+      font-size: 0.875rem;
+  
+      th, td {
+        padding: 0.5rem;
+      }
+
+    }
+  }
+  
